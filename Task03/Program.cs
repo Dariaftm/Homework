@@ -3,8 +3,8 @@ Console.WriteLine();
 string[] Days = {"Понедельник", "Втоник", "Среда", "Четверг", "Пятница", "Суббота", "Вскресенье"};
 
 Console.WriteLine("Введите номер дня недели: ");
-string.writeDays = Console.ReadLine();
-bool result = int.TryParse(writeDays, out int daysNumber); // определяет данные номера в день недели
+string writeDay = Console.ReadLine();
+bool result = int.TryParse(writeDay, out int dayNumber); // определяет данные номера в день недели
 
 Console.WriteLine();
 if (result == false) Console.WriteLine("Число введено неверно");
