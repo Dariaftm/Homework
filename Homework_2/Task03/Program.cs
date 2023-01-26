@@ -3,7 +3,7 @@ Console.WriteLine();
 
 int quarterNum = new Random() .Next(1, 5);
 string range = "";
-string num = "";
+
  
 if(quarterNum == 1) range = "x > 0, y > 0";
 else if(quarterNum == 2) range = "x < 0, y > ";
