@@ -22,26 +22,26 @@ int max = 6;     // max значение диапазона
     {
         Console.Write($"{array[i]}, ");
     }
-     Console.WriteLine($"{array[array.Length - 1]}) ");
+     Console.WriteLine($"{array[array.Length - 1]})");
  }
  double Distance(int[] arr1, int[] arr2)
  {
     int sum = 0;
-    for (int i =0; i < arr1.Length; i++)
+    for (int i = 0; i < arr1.Length; i++)
     {
         sum = sum + (arr1[i] - arr2[i]) * (arr1[i] - arr2[i]);
     }
     double result = Math.Sqrt(sum);
-    result result;
+    return result;
  }
 
 int[] PointA = PointCoords(numPlan);
 int[] PointB = PointCoords(numPlan);
 
 Console.Write($"Координаты точки А: ");
-PointCoords(PointA);
+PrintCoords(PointA);
 Console.Write($"Координаты точки B: ");
-PointCoords(PointB);
+PrintCoords(PointB);
 
 Console.WriteLine($"Расстояние между точками А и B: {Distance(PointA, PointB)}");
 Console.WriteLine();
